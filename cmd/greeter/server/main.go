@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/apetesh/http/greeter"
+	"github.com/apetesh/gothings/greeter"
 	"log"
 )
 
