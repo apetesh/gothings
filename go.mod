@@ -1,1 +1,1 @@
-module github.com/apetesh/http
+module github.com/apetesh/gothings
