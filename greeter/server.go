@@ -3,7 +3,7 @@ package greeter
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/apetesh/http/greeter/api"
+	"github.com/apetesh/gothings/greeter/api"
 
 	"io/ioutil"
 	"log"
@@ -41,6 +41,7 @@ func (srv *Server) greet(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), 500)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	_ , err = w.Write(responseBody)
 	if err != nil {
 		http.Error(w, err.Error(), 500)

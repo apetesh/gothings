@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/apetesh/http/greeter/api"
+	"github.com/apetesh/gothings/greeter/api"
 	"io/ioutil"
 	"log"
 	"net/http"
